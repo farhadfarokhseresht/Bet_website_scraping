@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.2">
+  <object class="tk.Frame" id="main">
+    <property name="background">#ffffff</property>
+    <property name="height">400</property>
+    <property name="width">600</property>
+    <layout manager="pack">
+      <property name="expand">true</property>
+      <property name="fill">both</property>
+      <property name="side">top</property>
+    </layout>
+    <containerlayout manager="pack">
+      <property name="propagate">False</property>
+    </containerlayout>
+    <child>
+      <object class="pygubu.builder.widgets.tkscrolledframe" id="tkscrolledframe3">
+        <property name="background">#ffffff</property>
+        <property name="scrolltype">both</property>
+        <property name="usemousewheel">false</property>
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="fill">both</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="tk.LabelFrame" id="informationFrame">
+            <property name="background">#ffffff</property>
+            <property name="cursor">arrow</property>
+            <property name="height">200</property>
+            <property name="labelanchor">ne</property>
+            <property name="text" translatable="yes">ورود اطلاعات</property>
+            <property name="width">200</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="side">top</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+            </containerlayout>
+            <child>
+              <object class="tk.LabelFrame" id="labelframe7">
+                <property name="background">#ffffff</property>
+                <property name="labelanchor">ne</property>
+                <property name="relief">ridge</property>
+                <property name="text" translatable="yes">آدرس وب سايت</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">0</property>
+                </layout>
+                <child>
+                  <object class="tk.Entry" id="website_url">
+                    <property name="cursor">arrow</property>
+                    <property name="justify">center</property>
+                    <property name="state">normal</property>
+                    <property name="width">30</property>
+                    <layout manager="pack">
+                      <property name="side">top</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="tk.LabelFrame" id="labelframe8">
+                <property name="background">#ffffff</property>
+                <property name="labelanchor">ne</property>
+                <property name="relief">ridge</property>
+                <property name="text" translatable="yes">شماره مبايل</property>
+                <property name="width">200</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+                <child>
+                  <object class="tk.Entry" id="mobile_num">
+                    <property name="cursor">arrow</property>
+                    <property name="justify">center</property>
+                    <property name="state">normal</property>
+                    <property name="width">30</property>
+                    <layout manager="pack">
+                      <property name="side">top</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="tk.LabelFrame" id="cartFrame">
+                <property name="background">#ffffff</property>
+                <property name="labelanchor">n</property>
+                <property name="relief">ridge</property>
+                <property name="text" translatable="yes">اطلاعات کارت</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+                <child>
+                  <object class="tk.Frame" id="cart_idFrame">
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Label" id="cart_id_label">
+                        <property name="background">#ffffff</property>
+                        <property name="takefocus">false</property>
+                        <property name="text" translatable="yes">:  شماره کارت</property>
+                        <layout manager="grid">
+                          <property name="column">2</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Entry" id="cart_id">
+                        <property name="justify">center</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Frame" id="cart_cvv2_frame">
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">1</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Label" id="label4">
+                        <property name="background">#ffffff</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="text" translatable="yes">:  cvv2</property>
+                        <layout manager="grid">
+                          <property name="column">2</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="cart_cvv2">
+                        <property name="cursor">arrow</property>
+                        <property name="justify">center</property>
+                        <property name="state">normal</property>
+                        <property name="width">6</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Frame" id="frame10">
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">2</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Label" id="label5">
+                        <property name="background">#ffffff</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="text" translatable="yes">:  پسورد دوم کارت</property>
+                        <layout manager="grid">
+                          <property name="column">2</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="cart_pass2">
+                        <property name="cursor">arrow</property>
+                        <property name="justify">center</property>
+                        <property name="state">normal</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Frame" id="frame11">
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">3</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Label" id="label6">
+                        <property name="background">#ffffff</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="text" translatable="yes">:  ماه</property>
+                        <layout manager="grid">
+                          <property name="column">2</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="cart_month">
+                        <property name="cursor">arrow</property>
+                        <property name="justify">center</property>
+                        <property name="state">normal</property>
+                        <property name="width">5</property>
+                        <layout manager="grid">
+                          <property name="column">1</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Label" id="label7">
+                        <property name="background">#ffffff</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="text" translatable="yes">:  سال</property>
+                        <layout manager="grid">
+                          <property name="column">4</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="cart_year">
+                        <property name="cursor">arrow</property>
+                        <property name="justify">center</property>
+                        <property name="state">normal</property>
+                        <property name="width">6</property>
+                        <layout manager="grid">
+                          <property name="column">3</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="tk.LabelFrame" id="majazi">
+                <property name="background">#ffffff</property>
+                <property name="labelanchor">ne</property>
+                <property name="padx">10</property>
+                <property name="pady">10</property>
+                <property name="relief">ridge</property>
+                <property name="text" translatable="yes">بانک داري مجازي</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">1</property>
+                </layout>
+                <child>
+                  <object class="tk.Frame" id="frame1">
+                    <property name="background">#ffffff</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="ipady">5</property>
+                      <property name="row">0</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Label" id="label1">
+                        <property name="anchor">n</property>
+                        <property name="background">#ffffff</property>
+                        <property name="text" translatable="yes">نام کاربري</property>
+                        <layout manager="grid">
+                          <property name="column">2</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Entry" id="banckuser">
+                        <property name="justify">center</property>
+                        <property name="width">15</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Frame" id="frame5">
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">1</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Label" id="label10">
+                        <property name="anchor">n</property>
+                        <property name="background">#ffffff</property>
+                        <property name="text" translatable="yes">رمز ثابت</property>
+                        <layout manager="grid">
+                          <property name="column">2</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Entry" id="banckpass">
+                        <property name="justify">center</property>
+                        <property name="width">15</property>
+                        <layout manager="grid">
+                          <property name="column">0</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.LabelFrame" id="labelframe9">
+            <property name="background">#ffffff</property>
+            <property name="height">200</property>
+            <property name="labelanchor">ne</property>
+            <property name="text" translatable="yes">فرايند ها</property>
+            <property name="width">200</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="side">top</property>
+            </layout>
+            <child>
+              <object class="tk.Frame" id="frame20">
+                <property name="background">#ffffff</property>
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+                <child>
+                  <object class="tk.Button" id="banckbtn">
+                    <property name="background">#0080ff</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="relief">raised</property>
+                    <property name="text" translatable="yes">فرايند بانک</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="padx">10</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="gatewaybtn">
+                    <property name="background">#0080ff</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="relief">raised</property>
+                    <property name="text" translatable="yes">فرايند پرداخت</property>
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="padx">10</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="startbtn">
+                    <property name="background">#0080ff</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="relief">raised</property>
+                    <property name="text" translatable="yes">فرايند ورود</property>
+                    <layout manager="grid">
+                      <property name="column">2</property>
+                      <property name="padx">10</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Frame" id="frame22">
+                <property name="background">#ffffff</property>
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout manager="pack">
+                  <property name="pady">10</property>
+                  <property name="side">right</property>
+                </layout>
+                <child>
+                  <object class="tk.Button" id="smsbtn">
+                    <property name="background">#0080ff</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="relief">raised</property>
+                    <property name="text" translatable="yes">ارسال کد </property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="padx">10</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Label" id="label19">
+                    <property name="background">#ffffff</property>
+                    <property name="foreground">#000040</property>
+                    <property name="text" translatable="yes"> : پيامک بانک </property>
+                    <layout manager="grid">
+                      <property name="column">3</property>
+                      <property name="padx">10</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Entry" id="smscod">
+                    <property name="background">#c0c0c0</property>
+                    <property name="justify">center</property>
+                    <property name="text" translatable="yes">...</property>
+                    <property name="width">8</property>
+                    <layout manager="grid">
+                      <property name="column">2</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.LabelFrame" id="labelframe14">
+            <property name="background">#ffffff</property>
+            <property name="labelanchor">n</property>
+            <property name="text" translatable="yes">پيام سيستم</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="side">top</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">s</property>
+            </containerlayout>
+            <child>
+              <object class="tk.Message" id="logmessage">
+                <property name="aspect">10000000</property>
+                <property name="background">#ffffff</property>
+                <property name="foreground">#ff0000</property>
+                <property name="relief">flat</property>
+                <property name="text" translatable="yes">1</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Text" id="text1">
+            <property name="autoseparators">false</property>
+            <property name="background">#c0c0c0</property>
+            <property name="blockcursor">false</property>
+            <property name="height">2</property>
+            <property name="insertunfocussed">solid</property>
+            <property name="state">disabled</property>
+            <property name="text" translatable="yes">pause recording by Control + p
+continues recording by Control + p</property>
+            <property name="wrap">none</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="fill">x</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
